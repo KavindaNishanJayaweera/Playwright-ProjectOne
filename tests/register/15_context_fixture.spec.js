@@ -21,9 +21,9 @@ test('request',async function contextFixture({context}){
     await pageTwo.goto('https://test-automation-app.vercel.app/login');
     await pageTwo.locator('#username').fill('user@gmail.com');
     await pageTwo.locator('#password').fill('user123');
-    await pageTwo.locator('[type="submit"]').click();
+    //await pageTwo.locator('[type="submit"]').click();
 
- 
+    await pageTwo.locator('xpath=//*[@id="root"]/div/div/div[1]/div[2]/form/button').click();
 
 
 });

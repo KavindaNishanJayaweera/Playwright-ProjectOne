@@ -48,7 +48,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     //trace: 'on-first-retry',
     // trace: 'on',
-    // headless:false,
+    headless:false,
     // screenshot:'only-on-failure',
     // video:'retain-on-failure'
   },
@@ -59,6 +59,11 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
+
+    //  {
+    //   name: 'webkit',
+    //   use: { ...devices['iPhone 14 Pro'] },
+    // },
 
     // {
     //   name: 'firefox',
