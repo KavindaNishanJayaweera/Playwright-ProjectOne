@@ -24,7 +24,7 @@ export default defineConfig({
   //retries: process.env.CI ? 2 : 0,
 
   //new add
-  retries:1,
+  //retries:1,
 
 
   /* Opt out of parallel tests on CI. */
@@ -46,10 +46,11 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
-    headless:false,
-    screenshot:'only-on-failure',
-    video:'retain-on-failure'
+    //trace: 'on-first-retry',
+    // trace: 'on',
+    // headless:false,
+    // screenshot:'only-on-failure',
+    // video:'retain-on-failure'
   },
 
   /* Configure projects for major browsers */
